@@ -1023,7 +1023,7 @@ int main()
 }
 ~~~
 
-この`forward_link_list<T>`というクラスは`T`型の値を保持する`value`と、次のクラスのオブジェクトを参照するポインター`next`を持っている。このクラス`list`の次の要素は`*(list.next)`で、`list`の2つ次の要素は`*(*list.next).next)`だ。
+この`forward_link_list<T>`というクラスは`T`型の値を保持する`value`と、次のクラスのオブジェクトを参照するポインター`next`を持っている。このクラス`list`の次の要素は`*(list.next)`で、`list`の2つ次の要素は`*((*list.next).next)`だ。
 
 このような`forward_link_list<T>`へのイテレーターの骨子は以下のように書ける。
 
