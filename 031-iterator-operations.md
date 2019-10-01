@@ -576,7 +576,7 @@ int main()
 }
 ~~~
 
-`std::back_inserter(c)`はコンテナー`c`に出力イテレーターとして渡された値を`puch_back`する。
+`std::back_inserter(c)`はコンテナー`c`に出力イテレーターとして渡された値を`push_back`する。
 
 ただし、`std::back_inserter`は古いライブラリなので、ここで示した方法とは少し違う実装がされている。
 
